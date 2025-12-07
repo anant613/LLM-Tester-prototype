@@ -15,6 +15,9 @@ load_dotenv()
 
 app = FastAPI()
 
+# Get port from environment (for Render deployment)
+PORT = int(os.getenv("PORT", 8000))
+
 # CORS configuration - allows frontend to communicate with backend
 app.add_middleware(
     CORSMiddleware,
