@@ -1,2 +1,3 @@
 @echo off
-C:\Users\anant\AppData\Local\Programs\Python\Python314\python.exe -m uvicorn main:app --reload
+echo Starting AI Comparator Backend...
+python -m uvicorn main:app --reload --host 0.0.0.0 --port 8000
